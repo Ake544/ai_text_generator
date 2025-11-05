@@ -187,63 +187,64 @@ def analyze_sentiment_comprehensive(text, sentiment_pipeline):
         return "NEUTRAL", 0.5, []
 
 def generate_emotion_aligned_text(prompt, sentiment, confidence, text_generator, length=150):
-   # GPT-2 UNDERSTANDS THESE PROMPTS - they mimic natural conversation
+    """
+    Generates emotion-aligned text with an exact number of words and on-topic.
+    """
+    import random
+
+    # Stronger prompts to guide GPT-2
     natural_prompts = {
         "POSITIVE": [
-            f"I think {prompt} is really great because",
-            f"What I love about {prompt} is that",
-            f"{prompt} makes me happy because",
-            f"The best thing about {prompt} is"
+            f"Write a positive paragraph about: {prompt}. Stay on topic and do not mention anything else.",
+            f"Explain why {prompt} is positive in a short paragraph, staying fully on topic."
         ],
         "NEGATIVE": [
-            f"I'm concerned about {prompt} because", 
-            f"The problem with {prompt} is that",
-            f"What worries me about {prompt} is",
-            f"{prompt} is difficult because"
+            f"Write a negative paragraph about: {prompt}. Stay on topic and do not mention anything else.",
+            f"Explain why {prompt} is negative in a short paragraph, staying fully on topic."
         ],
         "NEUTRAL": [
-            f"When I think about {prompt}, I notice that",
-            f"{prompt} can be understood as",
-            f"Looking at {prompt} objectively,",
-            f"{prompt} involves"
+            f"Write a neutral paragraph about: {prompt}. Stay on topic and do not mention anything else.",
+            f"Describe {prompt} neutrally in a short paragraph."
         ]
     }
-    
-    import random
+
     final_prompt = random.choice(natural_prompts[sentiment])
-    
+
     try:
-        word_count_estimate = int(length * 1.5)  
+        # Generate enough tokens (tokens != words)
         generated_output = text_generator(
             final_prompt,
-            max_new_tokens=word_count_estimate,  
+            max_new_tokens=int(length * 1.3),  # Slightly more to ensure enough words
             num_return_sequences=1,
-            temperature=0.4,  #To avoid off-topic generation 
+            temperature=0.3,  # Lower = more focused
             do_sample=True,
-            repetition_penalty=1.8, 
-            pad_token_id=50256,
-            truncation=True,
-            no_repeat_ngram_size=3,
-            early_stopping=False
+            repetition_penalty=2.0,
+            pad_token_id=50256
         )
-        
-        full_output = generated_output[0]['generated_text']
-        
-        if final_prompt in full_output:
-            generated_text = full_output.replace(final_prompt, "").strip()
-        else:
-            generated_text = full_output
-        
-        generated_text = generated_text.split('\n')[0].strip()
-        
-        # Ensure it ends properly
-        if generated_text and generated_text[-1] not in ['.', '!', '?']:
-            generated_text += '.'
-        
-        return generated_text
-        
+
+        # Remove the prompt from generated text
+        full_text = generated_output[0]['generated_text'].replace(final_prompt, "").strip()
+
+        # Split into words and truncate to exact slider length
+        words = full_text.split()
+        if len(words) > length:
+            words = words[:length]
+        full_text = " ".join(words)
+
+        # Add punctuation if missing
+        if full_text and full_text[-1] not in ['.', '!', '?']:
+            full_text += '.'
+
+        # Capitalize first letter
+        if full_text and full_text[0].islower():
+            full_text = full_text[0].upper() + full_text[1:]
+
+        return full_text
+
     except Exception as e:
         return f"Generation failed: {str(e)}"
+
+
 
 def clean_generated_text(text):
     """Clean and format generated text"""
