@@ -35,6 +35,10 @@ This Streamlit app analyzes the sentiment of your input text (Positive, Negative
 
 ---
 
+
+**Live Demo:** [https://aitextgenerator-qf6vle6qzyigjr4idrhaxf.streamlit.app/](https://aitextgenerator-qf6vle6qzyigjr4idrhaxf.streamlit.app/) 
+
+
 ## Installation
 
 1. Clone the repository:
