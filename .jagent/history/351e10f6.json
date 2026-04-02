@@ -1,0 +1,21 @@
+{
+  "id": "351e10f6",
+  "title": "Create a news letter website",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Create a news letter website",
+      "timestamp": "2026-04-02T13:04:48.193Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (opencode): OpenCode Zen API: request timed out",
+      "timestamp": "2026-04-02T13:07:48.202Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-02T13:04:48.185Z",
+  "updatedAt": "2026-04-02T13:07:48.202Z"
+}
