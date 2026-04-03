@@ -3,7 +3,8 @@
 ✨ Generate emotion-aligned paragraphs using AI.  
  
  
-This Streamlit app analyzes the sentiment of your input text (Positive, Negative, Neutral) and generates text aligned with that emotion using GPT-2.  
+This Streamlit app analyzes the sentiment of y
+# Test commentour input text (Positive, Negative, Neutral) and generates text aligned with that emotion using GPT-2.  
 
 ---
 
