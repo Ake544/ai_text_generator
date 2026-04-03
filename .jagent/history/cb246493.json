@@ -1,0 +1,21 @@
+{
+  "id": "cb246493",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-03T04:55:05.295Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (opencode): HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"ModelError\",\"message\":\"Free promotion has ended for MiMo V2 Pro Free. You can continue using the model by subscribing to OpenCode Go - https://opencode.ai/go\"}}",
+      "timestamp": "2026-04-03T04:55:05.716Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-03T04:55:05.287Z",
+  "updatedAt": "2026-04-03T04:55:05.716Z"
+}

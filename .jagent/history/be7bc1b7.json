@@ -1,0 +1,57 @@
+{
+  "id": "be7bc1b7",
+  "title": "create an news letter website",
+  "messages": [
+    {
+      "role": "user",
+      "content": "create an news letter website",
+      "timestamp": "2026-04-03T03:32:51.495Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (opencode): HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"ModelError\",\"message\":\"Free promotion has ended for MiMo V2 Pro Free. You can continue using the model by subscribing to OpenCode Go - https://opencode.ai/go\"}}",
+      "timestamp": "2026-04-03T03:32:52.071Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "create an news letter website",
+      "timestamp": "2026-04-03T03:34:00.542Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (opencode): OpenCode Zen API: request timed out",
+      "timestamp": "2026-04-03T03:37:00.550Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "create a news letter website",
+      "timestamp": "2026-04-03T03:37:28.538Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (groq): HTTP 413: {\"error\":{\"message\":\"Request too large for model `llama-3.3-70b-versatile` in organization `org_01kd2gv2cbewxt5qftqcwwwdya` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested ",
+      "timestamp": "2026-04-03T03:37:28.634Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "create an news letter website",
+      "timestamp": "2026-04-03T03:51:34.647Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Unable to generate newsletter website due to AI service provider errors. Please try again later when services are restored.",
+      "timestamp": "2026-04-03T03:51:51.242Z",
+      "provider": "OpenCode Zen API",
+      "model": "nvidia/nemotron-3-super-120b-a12b-20230311:free"
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-03T03:32:51.486Z",
+  "updatedAt": "2026-04-03T03:51:51.242Z"
+}
