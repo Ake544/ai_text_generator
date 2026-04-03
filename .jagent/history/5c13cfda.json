@@ -1,0 +1,21 @@
+{
+  "id": "5c13cfda",
+  "title": "List all files in the workspace and describe the project str",
+  "messages": [
+    {
+      "role": "user",
+      "content": "List all files in the workspace and describe the project structure",
+      "timestamp": "2026-04-03T10:45:57.810Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (opencode): HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"ModelError\",\"message\":\"Free promotion has ended for MiMo V2 Pro Free. You can continue using the model by subscribing to OpenCode Go - https://opencode.ai/go\"}}",
+      "timestamp": "2026-04-03T10:45:58.167Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-03T10:45:57.809Z",
+  "updatedAt": "2026-04-03T10:45:58.167Z"
+}
