@@ -1,0 +1,21 @@
+{
+  "id": "976a7c2c",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T06:42:01.264Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (glm): HTTP 400: {\"error\":{\"code\":\"1211\",\"message\":\"模型不存在，请检查模型代码。\"}} (typeof PROVIDERS[glm] = object)",
+      "timestamp": "2026-04-04T06:42:01.582Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-04T06:42:01.259Z",
+  "updatedAt": "2026-04-04T06:42:01.582Z"
+}

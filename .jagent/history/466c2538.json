@@ -1,0 +1,33 @@
+{
+  "id": "466c2538",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T06:47:30.642Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (opencode): HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"ModelError\",\"message\":\"Model mimo-v2-pro-free not supported\"}}",
+      "timestamp": "2026-04-04T06:47:30.974Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T06:47:40.616Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (glm): HTTP 400: {\"error\":{\"code\":\"1211\",\"message\":\"模型不存在，请检查模型代码。\"}}",
+      "timestamp": "2026-04-04T06:47:41.147Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-04T06:47:30.640Z",
+  "updatedAt": "2026-04-04T06:47:41.147Z"
+}

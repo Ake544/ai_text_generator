@@ -1,0 +1,57 @@
+{
+  "id": "7c82cac8",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:09:25.450Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (openrouter): Cannot read properties of undefined (reading 'envKeyPrefix')",
+      "timestamp": "2026-04-04T12:09:25.463Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:09:35.449Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! I'm J Agent, your AI coding assistant. How can I help you with your project today?",
+      "timestamp": "2026-04-04T12:09:38.213Z",
+      "provider": "Zhipu GLM",
+      "model": "glm-4.6v-flash"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:09:47.600Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! I'm ready to assist you.",
+      "timestamp": "2026-04-04T12:09:48.244Z",
+      "provider": "Groq",
+      "model": "llama-3.3-70b-versatile"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:10:12.917Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (openrouter): Cannot read properties of undefined (reading 'envKeyPrefix')",
+      "timestamp": "2026-04-04T12:10:12.925Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-04T12:09:25.446Z",
+  "updatedAt": "2026-04-04T12:10:12.925Z"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "843bad29",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T07:50:30.748Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! I'm ready to help you with your project. What would you like to build or work on today?",
+      "timestamp": "2026-04-04T07:50:35.305Z",
+      "provider": "Zhipu GLM",
+      "model": "glm-4.7-flash"
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-04T07:50:30.725Z",
+  "updatedAt": "2026-04-04T07:50:35.305Z"
+}

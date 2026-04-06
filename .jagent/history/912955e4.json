@@ -1,0 +1,118 @@
+{
+  "id": "912955e4",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:26:41.685Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (openrouter): HTTP 404: {\"error\":{\"message\":\"No endpoints found for qwen/qwen-2.5-72b-instruct:free.\",\"code\":404},\"user_id\":\"user_3BtEslkm91pRUAPH5OqoaxDwlKQ\"}",
+      "timestamp": "2026-04-04T12:26:41.972Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:26:54.708Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (glm): HTTP 429: {\"error\":{\"code\":\"1305\",\"message\":\"该模型当前访问量过大，请您稍后再试\"}}",
+      "timestamp": "2026-04-04T12:26:55.687Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:27:01.328Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (glm): Zhipu GLM: Request timed out",
+      "timestamp": "2026-04-04T12:28:57.533Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [
+    {
+      "name": "listDir",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/README.md"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/app.py"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/main.py"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/requirements.txt"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/index.html"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/script.js"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/Dockerfile"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    },
+    {
+      "name": "readFile",
+      "params": {
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/docker-compose.yml"
+      },
+      "success": true,
+      "timestamp": "2026-04-04T12:28:57.534Z"
+    }
+  ],
+  "createdAt": "2026-04-04T12:26:41.680Z",
+  "updatedAt": "2026-04-04T12:28:57.534Z"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "7ce6adea",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:24:14.088Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (openrouter): Missing API Key: OPENROUTER_API_KEY",
+      "timestamp": "2026-04-04T12:24:14.129Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-04T12:24:42.424Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (glm): HTTP 429: {\"error\":{\"code\":\"1305\",\"message\":\"该模型当前访问量过大，请您稍后再试\"}}",
+      "timestamp": "2026-04-04T12:24:44.301Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-04T12:24:14.085Z",
+  "updatedAt": "2026-04-04T12:24:44.301Z"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "297a1708",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-03T10:56:32.261Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (groq): HTTP 413: {\"error\":{\"message\":\"Request too large for model `llama-3.3-70b-versatile` in organization `org_01kd2gv2cbewxt5qftqcwwwdya` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested ",
+      "timestamp": "2026-04-03T10:56:32.337Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-03T10:56:32.260Z",
+  "updatedAt": "2026-04-03T10:56:32.337Z"
+}

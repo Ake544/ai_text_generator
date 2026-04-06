@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Generator with Sentiment Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AI Text Generator</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Generate Emotion-Aligned Text with AI</h1>
+                <p>Enter any topic or text, and our AI will generate content that matches the sentiment of your input</p>
+            </div>
+        </section>
+
+        <section class="generator-container">
+            <div class="input-section">
+                <h2>Enter Your Topic</h2>
+                <div class="input-wrapper">
+                    <textarea 
+                        id="userPrompt" 
+                        placeholder="Type your topic or text here..." 
+                        rows="4"
+                    ></textarea>
+                    <button id="generateBtn" class="generate-btn">
+                        <span class="btn-text">Generate Text</span>
+                        <span class="btn-loader" style="display: none;"></span>
+                    </button>
+                </div>
+                <div class="hint">Example: "The new coffee shop downtown is amazing" or "The weather today is terrible"</div>
+            </div>
+
+            <div class="results-section">
+                <h2>Generated Results</h2>
+                
+                <div class="sentiment-badge" id="sentimentBadge">
+                    <span class="sentiment-label">Sentiment Analysis</span>
+                    <span class="sentiment-value" id="sentimentValue">--</span>
+                    <span class="sentiment-confidence" id="sentimentConfidence">--</span>
+                </div>
+
+                <div class="output-container">
+                    <div class="output-label">Generated Text</div>
+                    <div class="output-content" id="generatedText">
+                        <p class="placeholder-text">Your generated text will appear here...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Text Generator. Built with Flask & Transformers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

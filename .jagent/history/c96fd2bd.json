@@ -1,0 +1,33 @@
+{
+  "id": "c96fd2bd",
+  "title": "hi",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-03T11:09:10.271Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (opencode): HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"ModelError\",\"message\":\"Free promotion has ended for MiMo V2 Pro Free. You can continue using the model by subscribing to OpenCode Go - https://opencode.ai/go\"}}",
+      "timestamp": "2026-04-03T11:09:10.657Z",
+      "provider": "error",
+      "model": null
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-04-03T11:09:20.675Z"
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ AI Provider Error (groq): HTTP 413: {\"error\":{\"message\":\"Request too large for model `llama-3.3-70b-versatile` in organization `org_01kd2gv2cbewxt5qftqcwwwdya` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested ",
+      "timestamp": "2026-04-03T11:09:20.727Z",
+      "provider": "error",
+      "model": null
+    }
+  ],
+  "toolCalls": [],
+  "createdAt": "2026-04-03T11:09:10.270Z",
+  "updatedAt": "2026-04-03T11:09:20.727Z"
+}
