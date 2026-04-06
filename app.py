@@ -3,7 +3,6 @@ import flask
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 
-#github push test enter 
 
 # Initialize models in session state
 if 'models_loaded' not in app.config:
@@ -106,7 +105,6 @@ def generate_emotion_aligned_text(prompt, sentiment, confidence, text_generator,
         full_text = full_text[0].upper() + full_text[1:]
     return full_text
 
-#This is to test the github push flow test test test
 
 
 if __name__ == '__main__':
