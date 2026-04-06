@@ -1,0 +1,30 @@
+{
+  "id": "db542cef",
+  "title": "delete TEST-WORFLOW folder",
+  "messages": [
+    {
+      "role": "user",
+      "content": "delete TEST-WORFLOW folder",
+      "timestamp": "2026-04-06T12:09:11.930Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The folder TEST-WORFLOW has been successfully deleted.",
+      "timestamp": "2026-04-06T12:09:14.893Z",
+      "provider": "OpenRouter",
+      "model": "qwen/qwen-2.5-72b-instruct"
+    }
+  ],
+  "toolCalls": [
+    {
+      "name": "runCommand",
+      "params": {
+        "command": "rm -rf TEST-WORFLOW"
+      },
+      "success": true,
+      "timestamp": "2026-04-06T12:09:14.893Z"
+    }
+  ],
+  "createdAt": "2026-04-06T12:09:11.929Z",
+  "updatedAt": "2026-04-06T12:09:14.893Z"
+}
