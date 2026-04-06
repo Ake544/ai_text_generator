@@ -1,8 +1,8 @@
 {
   "actions": [
-    "User asked: \"hi\". Tools used: []. Outcome: Completed.",
-    "User asked: \"hi\". Tools used: []. Outcome: Completed.",
-    "User asked: \"In the TLF-blog, make the backend in fastapi\". Tools used: [writeFile, writeFile, writeFile, writeFile, writeFile, writeFile]. Outcome: Completed."
+    "User asked: \"Remove the folder \"TEST-WORFLOW\"\". Tools used: [runCommand]. Outcome: Completed.",
+    "User asked: \"Create a folder named TEST-WORFLOW, then generate a newsletter website, using html,css and js\". Tools used: [runCommand, writeFile, writeFile, writeFile, writeFile, writeFile, writeFile]. Outcome: Completed.",
+    "User asked: \"delete TEST-WORFLOW folder\". Tools used: [runCommand]. Outcome: Completed."
   ],
   "phaseState": ""
 }
