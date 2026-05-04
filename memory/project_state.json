@@ -1,0 +1,102 @@
+{
+  "project_id": "Nexus AI Landing Page",
+  "intent": "BUILD_WEBSITE",
+  "nodes": [
+    {
+      "id": "n1",
+      "action": "scaffold",
+      "params": {
+        "template": "react-vite"
+      },
+      "status": "done",
+      "output": {
+        "success": true,
+        "projectPath": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/Nexus AI Landing Page",
+        "templateUsed": "react-vite"
+      }
+    },
+    {
+      "id": "n2",
+      "action": "codegen",
+      "params": {
+        "file": "src/components/Hero.jsx",
+        "task": "Create a Hero component for 'Nexus AI' with a captivating headline, call-to-action, and a description. Incorporate dark-mode, glassmorphism styling, and framer-motion animations for elements like text and buttons."
+      },
+      "depends_on": [
+        "n1"
+      ],
+      "status": "done",
+      "output": {
+        "success": true,
+        "content": "import React from \"react\";\nimport { motion } from \"framer-motion\";\nimport { Sparkles, ArrowRight } from \"lucide-react\";\n\nconst CTAButton = () => (\n  <motion.button\n    whileHover={{ scale: 1.05 }}\n    whileTap={{ scale: 0.95 }}\n    className=\"group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-200 hover:shadow-xl active:scale-95\"\n  >\n    <span className=\"relative z-10 flex items-center gap-2\">\n      Get Started <ArrowRight className=\"transition-transform duration-300 group-hover:translate-x-1\" />\n    </span>\n    <motion.span\n      className=\"absolute inset-0 -z-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0\"\n      whileHover={{ opacity: 0.2 }}\n      transition={{ duration: 0.3 }}\n    />\n  </motion.button>\n);\n\nconst Hero = () => {\n  return (\n    <section className=\"relative flex min-h-screen items-center justify-center overflow-hidden bg-gray-950 px-6 text-white\">\n      {/* Background Elements */}\n      <div className=\"absolute inset-0 z-0\">\n        <div className=\"absolute -top-40 -right-40 h-80 w-80 rounded-full bg-blue-500 opacity-20 blur-3xl\"></div>\n        <div className=\"absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-purple-500 opacity-20 blur-3xl\"></div>\n        <div className=\"absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gray-700 bg-gradient-to-t from-gray-900 to-transparent opacity-30\"></div>\n      </div>\n\n      {/* Hero Content */}\n      <div className=\"relative z-10 mx-auto max-w-5xl text-center\">\n        <motion.div\n          initial={{ opacity: 0, y: 20 }}\n          animate={{ opacity: 1, y: 0 }}\n          transition={{ duration: 0.6 }}\n          className=\"mb-8\"\n        >\n          <div className=\"mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-2 text-sm font-medium text-blue-200 backdrop-blur-md\">\n            <Sparkles className=\"h-4 w-4\" />\n            Powered by Artificial Intelligence\n          </div>\n        </motion.div>\n\n        <motion.h1\n          initial={{ opacity: 0, y: 30 }}\n          animate={{ opacity: 1, y: 0 }}\n          transition={{ duration: 0.8, delay: 0.2 }}\n          className=\"mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-4xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl lg:text-6xl\"\n        >\n          Transform Ideas into Reality with Nexus AI\n        </motion.h1>\n\n        <motion.p\n          initial={{ opacity: 0, y: 30 }}\n          animate={{ opacity: 1, y: 0 }}\n          transition={{ duration: 0.8, delay: 0.4 }}\n          className=\"mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-300\"\n        >\n          Unlock the power of next-generation AI to generate content, analyze data, and automate workflows—all in one seamless platform.\n        </motion.p>\n\n        <motion.div\n          initial={{ opacity: 0, y: 30 }}\n          animate={{ opacity: 1, y: 0 }}\n          transition={{ duration: 0.8, delay: 0.6 }}\n        >\n          <CTAButton />\n        </motion.div>\n      </div>\n\n      {/* Subtle Grid Pattern */}\n      <div\n        className=\"pointer-events-none absolute inset-0 z-0 opacity-5\"\n        style={{\n          backgroundImage: `\n            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),\n            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)\n          `,\n          backgroundSize: '50px 50px',\n        }}\n      ></div>\n    </section>\n  );\n};\n\nexport default Hero;",
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/Nexus AI Landing Page/src/components/Hero.jsx"
+      }
+    },
+    {
+      "id": "n3",
+      "action": "codegen",
+      "params": {
+        "file": "src/components/Footer.jsx",
+        "task": "Develop a sleek Footer component including copyright information and social media links. Apply dark-mode and glassmorphism aesthetics, utilizing framer-motion for subtle hover or entrance animations."
+      },
+      "depends_on": [
+        "n1"
+      ],
+      "status": "done",
+      "output": {
+        "success": true,
+        "content": "import React from \"react\";\nimport { motion } from \"framer-motion\";\nimport { Twitter, Linkedin, Github } from \"lucide-react\";\nimport clsx from \"clsx\";\nimport tailwindMerge from \"tailwind-merge\";\n\n// Define social media links and their respective icons\nconst socialLinks = [\n  { name: \"Twitter\", icon: Twitter, url: \"https://twitter.com/NexusAI\" },\n  { name: \"LinkedIn\", icon: Linkedin, url: \"https://linkedin.com/company/NexusAI\" },\n  { name: \"GitHub\", icon: Github, url: \"https://github.com/NexusAI\" },\n];\n\n// Framer Motion variants for a subtle entrance animation for the footer itself\nconst footerVariants = {\n  hidden: { opacity: 0, y: 50 },\n  visible: {\n    opacity: 1,\n    y: 0,\n    transition: {\n      duration: 0.6,\n      ease: \"easeOut\",\n      when: \"beforeChildren\", // Animate children after the parent footer\n      staggerChildren: 0.1, // Stagger children animations\n    },\n  },\n};\n\n// Framer Motion variants for child elements (copyright text, social icons)\nconst itemVariants = {\n  hidden: { opacity: 0, y: 20 },\n  visible: {\n    opacity: 1,\n    y: 0,\n    transition: {\n      duration: 0.4,\n      ease: \"easeOut\",\n    },\n  },\n};\n\nconst Footer = () => {\n  return (\n    <motion.footer\n      className={clsx(\n        \"w-full bg-gradient-to-r from-gray-900 to-gray-950 text-gray-200 py-8 px-4 sm:px-6 lg:px-8\",\n        \"glass card-shadow\"\n      )}\n      initial=\"hidden\"\n      animate=\"visible\"\n      variants={footerVariants}\n    >\n      <div className={tailwindMerge(\n        {\n          \"max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between\":\n            true,\n          \"px-4 sm:px-6 lg:px-8 py-8\": true,\n          \"bg-white/10 backdrop-filter backdrop-blur-md border border-gray-700/10 rounded-md glass\":\n            true,\n        }\n      )}\n      >\n        {/* Copyright Information */}\n        <motion.p\n          className=\"text-sm font-light mb-4 md:mb-0 text-gray-400 dark:text-gray-600\"\n          variants={itemVariants}\n        >\n          &copy; {new Date().getFullYear()} Nexus AI. All rights reserved.\n        </motion.p>\n\n        {/* Social Media Links */}\n        <div className=\"flex space-x-6\">\n          {socialLinks.map((link) => (\n            <motion.a\n              key={link.name}\n              href={link.url}\n              target=\"_blank\"\n              rel=\"noopener noreferrer\"\n              className={clsx(\n                \"text-gray-400 hover:text-blue-400 transition-colors duration-300 transform\",\n                \"focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md\"\n              )}\n              variants={itemVariants}\n              whileHover={{ scale: 1.15, y: -5, transition: { type: \"spring\", stiffness: 400, damping: 10 } }}\n              aria-label={`Link to Nexus AI's ${link.name}`}\n            >\n              <link.icon size={24} strokeWidth={1.5} />\n            </motion.a>\n          ))}\n        </div>\n      </div>\n    </motion.footer>\n  );\n};\n\nexport default Footer;",
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/Nexus AI Landing Page/src/components/Footer.jsx"
+      }
+    },
+    {
+      "id": "n4",
+      "action": "codegen",
+      "params": {
+        "file": "src/index.css",
+        "task": "Set up global dark-mode styles, base fonts, and fundamental CSS variables or utility classes for glassmorphism effects and overall aesthetic consistency across the application."
+      },
+      "depends_on": [
+        "n1"
+      ],
+      "status": "done",
+      "output": {
+        "success": true,
+        "content": ":root {\n  --color-primary-light: #f0f4f8;\n  --color-primary-dark: #0f172a;\n  --color-text-light: #1e293b;\n  --color-text-dark: #e2e8f0;\n  --color-accent-blue: #3b82f6;\n  --color-accent-purple: #8b5cf6;\n  --color-border-glass: var(--tw-ring-color);\n  --color-bg-glass: rgba(0, 0, 0, 0.05);\n  --bg-base-100: #0f172a;\n  --color-text-base: #fff;\n  --ring-color: #3b82f6;\n  --ring-offset: 2px;\n  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;\n  --shadow-glass: 0 4px 30px rgba(0, 0, 0, 0.1);\n}\n\nbody {\n  background-color: var(--bg-base-100);\n  color: var(--color-text-base);\n  font-family:\n    system-ui,\n    -apple-system,\n    BlinkMacSystemFont,\n    'Segoe UI',\n    Roboto,\n    Oxygen,\n    Ubuntu,\n    Cantarell,\n    'Open Sans',\n    'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n#root {\n  flex-grow: 1;\n  display: flex;\n  flex-direction: column;\n}\n\n.glass {\n  background-color: var(--color-bg-glass);\n  backdrop-filter: blur(10px);\n  -webkit-backdrop-filter: blur(10px);\n  border: 1px solid var(--ring-color);\n  box-shadow: var(--shadow-glass);\n  border-radius: 12px;\n}\n\n.card-shadow {\n  box-shadow: var(--shadow-card);\n}\n\n/* Custom scrollbar styles */\n::-webkit-scrollbar {\n  width: 8px;\n  height: 8px;\n}\n\n::-webkit-scrollbar-track {\n  background: var(--bg-base-100);\n}\n\n::-webkit-scrollbar-thumb {\n  background: var(--ring-color);\n  border-radius: 4px;\n}\n\n::-webkit-scrollbar-thumb:hover {\n  background: var(--accent-purple);\n}\n\n::selection {\n  background: var(--ring-color);\n  color: var(--color-text-base);\n}\n\n:focus-visible {\n  @apply ring ring-offset ring-offset-base ring-color focus-visible:outline-none;\n}\n\n\njavascript\nimport { createGlobalStyle, css } from 'styled-components';\nimport { normalize } from 'tailwindcss/compat';\n\nconst GlobalStyles = createGlobalStyle`\n  ${css`\n    ${normalize};\n\n    :root {\n      --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);\n    }\n\n    html {\n      scroll-behavior: smooth;\n    }\n\n    body {\n      font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, ' sans-serif';\n      margin: 0;\n      padding: 0;\n      font-size: 16px;\n      font-weight: 400;\n      line-height: 1.5;\n    }\n  `}\n`;\n\nexport default GlobalStyles;",
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/Nexus AI Landing Page/src/index.css"
+      }
+    },
+    {
+      "id": "n5",
+      "action": "codegen",
+      "params": {
+        "file": "src/App.jsx",
+        "task": "Assemble the main application layout, importing and rendering the Hero and Footer components. Establish the overall dark-mode and glassmorphism theme, ensuring a cohesive single-page experience with framer-motion layout transitions or element animations where appropriate."
+      },
+      "depends_on": [
+        "n2",
+        "n3",
+        "n4"
+      ],
+      "status": "done",
+      "output": {
+        "success": true,
+        "content": "",
+        "path": "/home/main/domains/j.agent.tryleadersfirst.com/public_html/workspaces/aklilu_wassie_talrn_com/ai_text_generator/Nexus AI Landing Page/src/App.jsx"
+      }
+    },
+    {
+      "id": "n6",
+      "action": "requestDeployment",
+      "params": {
+        "projectName": "nexus-ai-landing-page",
+        "subdomain": "nexus-ai"
+      },
+      "depends_on": [
+        "n5"
+      ],
+      "status": "done"
+    }
+  ],
+  "results": {}
+}

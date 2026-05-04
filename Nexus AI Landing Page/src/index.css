@@ -1,0 +1,115 @@
+:root {
+  --color-primary-light: #f0f4f8;
+  --color-primary-dark: #0f172a;
+  --color-text-light: #1e293b;
+  --color-text-dark: #e2e8f0;
+  --color-accent-blue: #3b82f6;
+  --color-accent-purple: #8b5cf6;
+  --color-border-glass: var(--tw-ring-color);
+  --color-bg-glass: rgba(0, 0, 0, 0.05);
+  --bg-base-100: #0f172a;
+  --color-text-base: #fff;
+  --ring-color: #3b82f6;
+  --ring-offset: 2px;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  --shadow-glass: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--bg-base-100);
+  color: var(--color-text-base);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.glass {
+  background-color: var(--color-bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--ring-color);
+  box-shadow: var(--shadow-glass);
+  border-radius: 12px;
+}
+
+.card-shadow {
+  box-shadow: var(--shadow-card);
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ring-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-purple);
+}
+
+::selection {
+  background: var(--ring-color);
+  color: var(--color-text-base);
+}
+
+:focus-visible {
+  @apply ring ring-offset ring-offset-base ring-color focus-visible:outline-none;
+}
+
+
+javascript
+import { createGlobalStyle, css } from 'styled-components';
+import { normalize } from 'tailwindcss/compat';
+
+const GlobalStyles = createGlobalStyle`
+  ${css`
+    ${normalize};
+
+    :root {
+      --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, ' sans-serif';
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  `}
+`;
+
+export default GlobalStyles;

@@ -1,0 +1,12 @@
+# J-Agent Project Manifest
+version: "1.0"
+project:
+  name: "project-1777870131863"
+  intent: "DEBUG"
+  stack: "react-vite"
+  author: "J-Agent"
+
+environment:
+  node_version: ">=18"
+
+modules: []
