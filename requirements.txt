@@ -1,6 +1,0 @@
-flask
-pydantic
-uvicorn
-transformers
-torch
-torchvision
